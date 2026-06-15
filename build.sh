@@ -8,6 +8,9 @@
 # (i.e. exits with a non-zero exit status).
 set -e
 
+PRELOADER_ROOT_DIR=$(pwd)/pl_root
+TARGET_PRODUCT=k80_bsp 
+
 if [ -z ${TARGET_PRODUCT} ]; then
   echo "[ERROR] TARGET_PRODUCT is not defined"
   exit 1
